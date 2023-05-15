@@ -19,6 +19,10 @@ li{
     text-align: justify;
 }
 
+footer{
+    background-color: #CECBCB;
+}
+
 .listita{
     margin-top: 5px;
     margin-bottom: 15px;
@@ -34,8 +38,8 @@ li{
 }
 
 .container{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .par{
@@ -46,13 +50,13 @@ li{
     margin-bottom: 10px;
 }
 
-.custom-list {
+.custom-list{
     list-style: none;
 }
 
-.footprint-icon::before {
-    content: "\1F43E"; /* Código Unicode del emoji de huellas */
+.footprint-icon::before{
+    content: "\1F43E";
     display: inline-block;
-    margin-right: 5px; /* Opcional: Espacio entre el icono y el texto */
-    font-size: 20px; /* Tamaño del icono */
+    margin-right: 5px;
+    font-size: 20px;
 }
