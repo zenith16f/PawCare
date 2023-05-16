@@ -63,6 +63,25 @@ function changeMarginToDivSpecial() {
     });
 }
 
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+    
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+        // Efecto Opcional donde re recarga la animación:
+        // else{
+        //     reveals[i].classList.remove("active")
+        // }
+        // Queda a consideración dejarlo o no
+    }
+}
+
 window.addEventListener('load', addMarginTop);
 window.addEventListener('resize', addMarginTop);
 window.addEventListener('load', rearrangeElements);
@@ -73,3 +92,4 @@ window.addEventListener('load', changeMarginToDivs);
 window.addEventListener('resize', changeMarginToDivs);
 window.addEventListener('load', changeMarginToDivSpecial);
 window.addEventListener('resize', changeMarginToDivSpecial);
+window.addEventListener("scroll", reveal);
