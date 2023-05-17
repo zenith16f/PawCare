@@ -44,10 +44,10 @@
                                     Perfil
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                    <li><a class="dropdown-item" href="./login.html">Iniciar Sesión</a></li>
+                                    <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                                    <li><a class="dropdown-item" href="./perfil.html">Configuración</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
                                 </ul>
@@ -57,14 +57,14 @@
                                     Mascotas
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Todas</a></li>
+                                    <li><a class="dropdown-item" href="./mascotas.html">Todas</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Mascota x</a></li>
-                                    <li><a class="dropdown-item" href="#">Mascota y</a></li>
+                                    <li><a class="dropdown-item" href="./mascota.html">Mascota x</a></li>
+                                    <li><a class="dropdown-item" href="./mascota.html">Mascota y</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Agendar Citas</a>
+                                <a class="nav-link" href="./citas.html">Agendar Citas</a>
                             </li>
                         </ul>
                     </div>
@@ -83,8 +83,8 @@
                         <p>En nuestra clínica, entendemos que cada mascota es única y especial. Por eso, personalizamos nuestros tratamientos y servicios para satisfacer las necesidades individuales de cada uno de nuestros pacientes. Desde exámenes de rutina y vacunas hasta cirugías y cuidados intensivos, estamos equipados con las últimas tecnologías y conocimientos para brindar el mejor cuidado posible.</p>
                         <p class="text-center">Regístrate y disfruta de beneficios exclusivos para el cuidado de tus mascotas. ¡Únete ahora!</p>
                         <div class="text-center">
-                            <input class="btn btn-outline-primary" type="button" value="Iniciar Sesión">
-                            <input class="btn btn-outline-primary" type="button" value="Registrarme">
+                            <input class="btn btn-outline-primary" type="button" value="Iniciar Sesión" onclick="window.location.href = './login.html'">
+                            <input class="btn btn-outline-primary" type="button" value="Registrarme" onclick="window.location.href = './registro.html'">
                         </div>
                     </div>
                 <div class="div-image righ col-lg-6 col-xl-6 col-md-12 col-sm-12"><img src="./IMG/Menuimg.png" class="body-img" alt="Main Image"></div>
@@ -105,7 +105,7 @@
                             </ul>
                             <p class="text-center">¡Prueba esta función ya!</p>
                             <div class="text-center">
-                                <input class="btn btn-dark" type="button" value="Mascotas">
+                                <input class="btn btn-dark" type="button" value="Mascotas" onclick="window.location.href = './mascotas.html'">
                             </div>
                         </div>
                     </div>
@@ -122,8 +122,8 @@
                         <h3 class="margin-19">Cirugías</h3>
                         <p>Además del agendado de citas generales, nuestra aplicación también ofrece una función específica para el agendado de cirugías. Con esta herramienta, podrás programar y organizar de manera eficiente las cirugías de tus mascotas. Podrás seleccionar la fecha, hora y tipo de cirugía, y gestionar de manera adecuada los recursos y equipos necesarios para cada procedimiento. Esta función te brinda mayor control y optimización en la planificación de las cirugías, garantizando una atención quirúrgica de calidad para tus mascotas.</p>
                         <div class="text-center">
-                            <input class="btn btn-outline-primary" type="button" value="Angendar Cita General">
-                            <input class="btn btn-outline-primary" type="button" value="Agendar Cirugía">
+                            <input class="btn btn-outline-primary" type="button" value="Angendar Cita General" onclick="window.location.href = './citas.html'">
+                            <input class="btn btn-outline-primary" type="button" value="Agendar Cirugía" onclick="window.location.href = './citas.html'">
                         </div>
                     </div>
                 <div class="div-image righ col-lg-6 col-xl-6 col-md-12 col-sm-12"><img src="./IMG/cirugia.jpeg" class="body-img" alt="Main Image" style="width: 100%;"></div>
@@ -224,31 +224,25 @@
                 <hr class="table-group-divider">
                 <div class="row">
                     <div class="col-lg-3 col-xl-3 col-md-4 col-sm-4">
-                        <ul>
-                            <li>Información</li>
-                            <li>Soporte</li>
-                            <li>Contactanos</li>
-                        </ul>
+                        <p>Información</p>
+                        <p>Soporte</p>
+                        <p>Contactanos</p>
                     </div>
                     <div class="col-lg-7 col-xl-7 col-md-4 col-sm-4">
-                        <ul>
-                            <li>Términos y Condiciones</li>
-                            <li>About Us</li>
-                            <li>Políticas</li>
-                            <li>Servicios</li>
-                        </ul>
+                        <p>Términos y Condiciones</p>
+                        <p>About Us</p>
+                        <p>Políticas</p>
+                        <p>Servicios</p>
                     </div>
                     <div class="col-lg-1 col-xl-1 col-md-4 col-sm-4">
-                        <ul>
-                            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
-                        </ul>
+                        <p><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></p>
+                        <p><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></p>
+                        <p><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></p>
+                        <p><a href="#"><ion-icon name="mail-outline"></ion-icon></a></p>
                     </div>
                 </div>
                 <br>
-                <p class="text-center">Copyright</p>
+                <p class="text-center">© 2023</p>
             </div>
         </footer>
     </body>
