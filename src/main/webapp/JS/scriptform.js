@@ -44,14 +44,14 @@ function validatePassword(event) {
 }
 
 function resetForm() {
-    let form = document.getElementById('register');
+    let form = document.getElementById('form');
     form.reset();
 }
 
-function submitForm() {
-    let form = document.getElementById('register');
+function submitRegister() {
+    let form = document.getElementById('form');
     let inputs = form.querySelectorAll('input[type="text"], input[type="tel"], input[type="password"], input[type="email"]');
-
+    
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].value.trim() === '') {
             alert('Por favor, complete todos los campos.');
@@ -68,8 +68,18 @@ function submitForm() {
     }
 
     form.submit();
+}
 
-    for(let i = 0; i < inputs.length; i++){
-        console.log(inputs[i].value)
+function submitLog(){
+    let form = document.getElementById('form');
+    let inputs = form.querySelectorAll('input[type="text"], input[type="password"]');
+    
+    for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].value.trim() === '') {
+            alert('Por favor, complete todos los campos.');
+            return false;
+        }
     }
+
+    form.submit();
 }

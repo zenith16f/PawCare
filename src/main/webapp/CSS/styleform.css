@@ -7,8 +7,10 @@
 }
 
 .form{
-    box-shadow: 0 0 5px black ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.445) ;
     padding: 10px;
+    width: 40%;
+    border-radius: 13px;
 }
 
 footer {
@@ -25,4 +27,19 @@ h1,h2{
     font-family: 'Crimson Text', serif;
     color: rgb(49, 49, 156);
     text-shadow: 1px 1px 1px rgb(49, 167, 235);
+}
+
+.teclear{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input:focus{
+    /* box-shadow: inset 0px 0px 10px blue; */
+    outline: none;
+}
+
+.link{
+    margin-top: 9px;
 }

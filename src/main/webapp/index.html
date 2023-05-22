@@ -87,7 +87,32 @@
                             <input class="btn btn-outline-primary" type="button" value="Registrarme" onclick="window.location.href = './registro.html'">
                         </div>
                     </div>
-                <div class="div-image righ col-lg-6 col-xl-6 col-md-12 col-sm-12"><img src="./IMG/Menuimg.png" class="body-img" alt="Main Image"></div>
+                    <div id="carousel" class="carousel slide right col-lg-6 col-xl-6 col-md-12 col-sm-12" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="./IMG/Menuimg.png" class="d-block w-100" alt="imagen-1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./IMG/dogimage.jpeg" class="d-block w-100" alt="imagen-2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./IMG/cirugia.jpeg" class="d-block w-100" alt="imagen-3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -208,16 +233,16 @@
             <div class="par">
                 <div class="container reveal mascotas">
                     <div class="row">
-                        <div class="left col-lg-6 col-xl-6 col-md-12 col-sm-12"><img src="./IMG/Menuimg.png" class="body-img" alt="Main Image"></div>
-                        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
-                            <h2 class="text-center">Mascotas</h2>
+                        <div class="div-image left col-lg-6 col-xl-6 col-md-12 col-sm-12"><img src="./IMG/Menuimg.png" class="body-img" alt="Main Image"></div>
+                        <div class="right col-lg-6 col-xl-6 col-md-12 col-sm-12">
+                            <h2 class="text-center">Diagnósticos</h2>
                             <p class="justify-content-around">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus porro et inventore, numquam velit natus, nulla mollitia ab ullam enim suscipit! Laborum nisi adipisci culpa ratione harum saepe illo.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-
+        
         <footer>
             <div class="container">
                 <h6 class="text-center">Información de Contacto</h6>
