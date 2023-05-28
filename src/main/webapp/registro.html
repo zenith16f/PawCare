@@ -43,34 +43,37 @@
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <h2 class="text-center">Datos Personales</h2>
                         <label for="">Nombre</label>
-                        <input class="teclear" name="Nombre" type="text" onkeypress="return validateName()" required minlength="" maxlength="">
+                        <input id="nombre" class="teclear" name="Nombre" type="text" onkeypress="return validateName(event)" required minlength="3" maxlength="255">
                         <br>
                         <label for="">Apellido Paterno</label>
-                        <input class="teclear" name="Appat" type="text" onkeypress="return validateLastName()" required minlength="" maxlength="">
+                        <input id="appat" class="teclear" name="Appat" type="text" onkeypress="return validateName()" required minlength="3" maxlength="255">
                         <br>
                         <label for="">Apellido Materno</label>
-                        <input class="teclear" name="Apmat" type="text" onkeypress="return validateLastName()" required minlength="" maxlength="">
-                        <br>
-                        <label for="">Teléfono</label>
-                        <input class="teclear" name="Telefono" type="text" onkeypress="return validateTelephone(event)" required minlength="" maxlength="">
+                        <input id="apmat" class="teclear" name="Apmat" type="text" onkeypress="return validateName()" required minlength="3" maxlength="255">
                         <br>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <h2 class="text-center">Cuenta</h2>
                         <label for="">Correo Electrónico</label>
-                        <input class="teclear" name="Correo" type="text" onkeypress="return validateEmail(event)" required minlength="" maxlength="">
+                        <input id="mail" class="teclear" name="Correo" type="text" onkeypress="return validateEmail(event)" required minlength="10" maxlength="255" placeholder="algo@algo.algo">
                         <br>
                         <label for="password">Contraseña</label>
-                        <input class="teclear" name="Contrasena" type="text" id="password" onkeypress="return validatePassword(event)" required minlength="" maxlength="">
+                        <input class="teclear" placeholder="Mínimo 8 caracteres" name="Contrasena" type="text" id="password" onkeypress="return validatePassword(event)" required minlength="8" maxlength="255">
                         <br>
                         <label for="confirmPassword">Confirmar Contraseña</label>
-                        <input class="teclear" name="Confirmar" type="text" id="confirmPassword" onkeypress="return validatePassword(event)" required minlength="" maxlength="">
+                        <input class="teclear" name="Confirmar" type="text" id="confirmPassword" onkeypress="return validatePassword(event)" required minlength="8" maxlength="255">
+                        <br>
                     </div>
                     <div class="col-12">
-                        <p class="text-center link"><a href="./login.html">Iniciar Sesión</a></p>
+                        <label for="">Dirección</label>
+                        <input id="dir" class="teclear" name="Telefono" type="text" onkeypress="return validateDir(event)" required minlength="10" maxlength="255" placeholder="Calle No. número ,/. colonia // Calle número ,/. colonia">
+                        <br>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center link">¿Ya tiene cuenta? <a href="./login.html">Iniciar Sesión</a></p>
                     </div>
                     <div class="col-12 text-center buttons">
-                        <input class="btn btn-outline-primary" type="button" value="Siguiente" onclick="return submitRegister()">
+                        <input class="btn btn-outline-primary" type="submit" value="Registrar" onclick="return submitRegister()">
                         <input class="btn btn-outline-primary"  type="reset" value="Vaciar" onclick="return resetForm()">
                     </div>
                 </div>
@@ -79,7 +82,7 @@
     </main>
     <footer>
         <div class="container">
-            <p class="text-center"> <a href="#">Terminos y Condiciones</a>  || <a href="#">Políticas de Privacidad</a> </p>
+            <p class="text-center"> <a href="#" class="more">Terminos y Condiciones</a>  || <a href="#" class="more">Políticas de Privacidad</a> </p>
         </div>
     </footer>
 </body>

@@ -21,7 +21,7 @@ li{
 }
 
 footer{
-    background-color: #CECBCB;
+    background-color: #F8F9FA;
 }
 
 /* Margenes */
@@ -85,4 +85,62 @@ footer{
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
+}
+
+.copyright{
+    color: black;
+    font-size: 10px;
+}
+
+.more:link{
+    text-decoration: none;
+}
+
+.more:visited{
+    color: rgb(49, 49, 156);
+}
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 7vh;
+    right: 7%;
+    z-index: 99;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: rgb(49, 49, 156);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+}
+
+#scrollBtn:hover {
+    background-color: rgb(49, 49, 200);
+    color: #fff;
+    font-size: 20px;
+}  
+
+
+#scrollBtn:active{
+    background-color: rgb(49, 167, 235);
+}
+
+#scrollBtn.show {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
