@@ -1,6 +1,7 @@
+<!-- En este documento se mostrarán todas las mascota -->
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+    <head>    
         <!-- Imports -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +15,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
         <!-- Local -->
-        <title>PawCare</title>
+        <title>Mis Mascotas</title>
         <link rel="icon" href="./IMG/logotype.png">
-        <link rel="stylesheet" href="./CSS/styleindex.css">
-        <script src="./JS/scriptindex.js"></script>
+        <link rel="stylesheet" href="./CSS/stylemascotas.css">
+        <script src="./JS/scriptmascotas.js"></script>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -55,75 +55,82 @@
             </nav>
         </header>
 
-        <button title="Subir" id="scrollBtn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
-        <!-- Landing page -->
         <main>
-            <div class="container main">
+            <h1 class="text-center">Citas agendadas</h1>
+            <div class="container">
                 <div class="row">
-                    <div class="left col-lg-6 col-xl-6 col-md-12 col-sm-12">
-                        <h1 class="margin-19 text-center">Bienvenido a PawCare</h1>
-                        <p>Texto</p>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" style="width: 95%;">
+                            <img src="" class="card-img-top" alt="*Nombre de Mascota* foto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Nombre de Mascota</h5>
+                                <p class="card-text">Citas Pendientes</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item par">Edad</li>
+                                <li class="list-group-item">Especie</li>
+                                <li class="list-group-item par">Raza</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <a href="./vet.html" class="card-link more">Diagnósticar</a>
+                            </div>
+                        </div>
                     </div>
-                    <div id="carousel" class="carousel slide right col-lg-6 col-xl-6 col-md-12 col-sm-12" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" style="width: 95%;">
+                            <img src="" class="card-img-top" alt="*Nombre de Mascota* foto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Nombre de Mascota</h5>
+                                <p class="card-text">Citas Pendientes</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item par">Edad</li>
+                                <li class="list-group-item">Especie</li>
+                                <li class="list-group-item par">Raza</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <a href="./vet.html" class="card-link more">Diagnósticar</a>
+                            </div>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="5000">
-                                <img src="./IMG/Menuimg.png" class="d-block w-100" alt="imagen-1">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" style="width: 95%;">
+                            <img src="" class="card-img-top" alt="*Nombre de Mascota* foto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Nombre de Mascota</h5>
+                                <p class="card-text">Citas Pendientes</p>
                             </div>
-                            <div class="carousel-item" data-bs-interval="5000">
-                                <img src="./IMG/dogimage.jpeg" class="d-block w-100" alt="imagen-2">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="5000">
-                                <img src="./IMG/cirugia.jpeg" class="d-block w-100" alt="imagen-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item par">Edad</li>
+                                <li class="list-group-item">Especie</li>
+                                <li class="list-group-item par">Raza</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <a href="./vet.html" class="card-link more">Diagnósticar</a>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" style="width: 95%;">
+                            <img src="" class="card-img-top" alt="*Nombre de Mascota* foto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Nombre de Mascota</h5>
+                                <p class="card-text">Citas Pendientes</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item par">Edad</li>
+                                <li class="list-group-item">Especie</li>
+                                <li class="list-group-item par">Raza</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <a href="./vet.html" class="card-link more">Diagnósticar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="par">
-                <div class="container reveal mascotas">
-                    <div class="row">
-                        <div id="left-image" class="div-image left col-lg-6 col-xl-6 col-md-12 col-sm-12"><img src="./IMG/pets.png" class="body-img" alt="Perro"></div>
-                        <div id="right-text" class="right col-lg-6 col-xl-6 col-md-12 col-sm-12">
-                            <h2 class="margin-19 text-center">Mascotas Revisadas</h2>
-                            <p>No esperes más, regístralos hoy mismo y únete a nuestra comunidad de amantes de las mascotas. ¡Juntos, garantizaremos que tus peludos amigos reciban el cuidado excepcional que se merecen en cada etapa de su vida!</p>
-                            <div class="text-center">
-                                <input class="btn btn-dark" type="button" value="Mascotas" onclick="window.location.href = './vetmascotas.html'">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container reveal citas">
-                <div class="row">
-                    <div class="left col-lg-6 col-xl-6 col-md-12 col-sm-12">
-                        <h2 class="text-center margin-19">Lista de espera</h2>
-                        <h3>Revisión General</h3>
-                        <p>Nuestra aplicación cuenta con una función de agendado de citas generales que permite a los usuarios programar fácilmente consultas y seguimientos médicos para sus mascotas. Con esta herramienta, podrás seleccionar la fecha y hora más conveniente, recibir confirmaciones de cita y recordatorios automáticos, lo que te ayudará a gestionar de manera eficiente las consultas regulares y asegurarte de que tus mascotas reciban la atención necesaria.</p>
-                        <div class="text-center">
-                            <input class="btn btn-outline-primary" type="button" value="Angendar Cita General" onclick="window.location.href = './vetlistaespera.html'">
-                        </div>
-                    </div>
-                <div class="div-image righ col-lg-6 col-xl-6 col-md-12 col-sm-12"><img src="./IMG/agendar.png" class="body-img" alt="Main Image" style="width: 100%;"></div>
-                </div>
-            </div>
-
         </main>
-        
+
         <footer>
             <div class="container">
                 <h6 class="text-center">Información de Contacto</h6>
