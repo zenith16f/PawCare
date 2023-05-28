@@ -87,10 +87,10 @@ function submitRegister() {
         alert("Correo Inválido");
         return false;
     }
-    if (!/^([A-Za-záéíóúüñ\s]+)([\s,\.])(\w+\s)?(\d+)?([\s,\.])([A-Za-záéíóúüñ\s]+)$/.test(inputdir.value)) {
-        alert("Dirección Inválida");
-        return false;
-    } 
+    // if (!/^([A-Za-záéíóúüñ\s]+)([\s,\.])(\w+\s)?(\d+)?([\s,\.])([A-Za-záéíóúüñ\s]+)$/.test(inputdir.value)) {
+    //     alert("Dirección Inválida");
+    //     return false;
+    // } 
     if(inputname.value.trim() == "" || inputapmat.value.trim() == "" || inputappat.value.trim() == ""){
         alert("Error, no se permiten espacios vacíos en las entradas");
         return false;
