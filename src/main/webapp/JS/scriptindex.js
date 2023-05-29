@@ -93,3 +93,18 @@ window.addEventListener('resize', changeMarginToDivs);
 window.addEventListener('load', changeMarginToDivSpecial);
 window.addEventListener('resize', changeMarginToDivSpecial);
 window.addEventListener("scroll", reveal);
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    var scrollBtn = document.getElementById("scrollBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.classList.add("show");
+    } else {
+        scrollBtn.classList.remove("show");
+    }
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
